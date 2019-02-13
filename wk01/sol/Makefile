@@ -1,4 +1,6 @@
-all: q2 myprog q5 q6 q6sol q7 q7sol
+objects = q2 myprog q5 q6 q6sol q7 q7sol
+
+all: $(objects)
 
 q2: q2.c
 	gcc -Wall -Werror -o q2 q2.c
@@ -20,3 +22,6 @@ q7: q7.c
 
 q7sol: q7sol.c
 	gcc -Wall -Werror -o q7sol q7sol.c
+
+clean:
+	rm $(objects)
