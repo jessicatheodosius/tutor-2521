@@ -25,4 +25,14 @@ g. find prime number less than argv[1]
 
 a. argc = 4, argv = {"./myprog", "hello", "there,", "John Shepherd"}
 b. myFile
-c. stdin
+c. stdin (try with < q4.in)
+
+### Question 5
+
+a. won't compile
+b. compile, same as d
+c. compile, same as f
+d. b
+e. undefined behaviour
+f. f
+g. printed but to stderr
