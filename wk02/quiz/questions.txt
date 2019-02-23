@@ -1,0 +1,15 @@
+Write your functions in the list.c file.
+
+Question 1.
+Write a function NodeFromEnd(link l, int k), that takes in a linked list and an integer k
+and returns the k'th node from the end of that list. You can assume that k is within the bounds of the linked list. The very last node of the linked list is at k=0. Bonus imaginary marks for solutions that only traverse the linked list once.
+
+Question 2.
+Write a function deleteEven(link l), that takes in a linked list and returns a pointer to the first element in the list with all even nodes deleted from that list.
+1 -> 2 -> 3 -> 4 -> X would be 1 -> 3 -> X after calling deleteEven(link l)
+
+Write your test cases in testList.c and compile with:
+gcc -Wall -Werror -o prac testlist.c list.c
+
+Run them with:
+./prac
