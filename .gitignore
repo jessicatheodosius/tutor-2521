@@ -1,4 +1,5 @@
 # Tmp file
+.DS_Store
 *.swp
 
 # Prerequisites
