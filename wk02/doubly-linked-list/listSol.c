@@ -50,7 +50,36 @@ void printDListReverse (dlink ls) {
   printDListReverseHelper (curr);
 }
 
+/* static dlink singleToDoubleSeq (link ls) { */
+/*   dlink head = NULL; */
+/*   dlink tail; */
+
+/*   while (ls != NULL) { */
+/*     dlink dnode = newDNode (ls->item); */
+/*     if (head == NULL) { */
+/*       head = dnode; */
+/*     } else { */
+/*       tail->next = dnode; */
+/*       dnode->prev = tail; */
+/*     } */
+/*     tail = dnode; */
+/*     ls = ls->next; */
+/*   } */
+
+/*   return head; */
+/* } */
+
+static dlink singleToDoubleRec (link ls) {
+  if (ls == NULL) return NULL;
+
+  dlink head = newDNode (ls->item);
+  dlink tail = singleToDoubleRec (ls->next);
+  head->next = tail;
+  if (tail != NULL) tail->prev = head;
+
+  return head;
+}
+
 dlink singleToDouble (link ls) {
-    // complete this
-  return NULL;
+  return singleToDoubleRec (ls);
 }

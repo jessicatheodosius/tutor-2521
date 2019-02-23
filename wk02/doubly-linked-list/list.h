@@ -10,9 +10,9 @@ struct node {
 typedef struct dnode *dlink;
 
 struct dnode {
-    Item item;
-    dlink next;
-    dlink prev;
+  Item item;
+  dlink next;
+  dlink prev;
 };
 
 // Create a new node, initialised with the item provided. Return
