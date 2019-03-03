@@ -1,0 +1,2 @@
+Complete the function BSTtoDL
+Compile it with: gcc -Wall -Werror -o bst BST.c testBST.c
