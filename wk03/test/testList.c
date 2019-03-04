@@ -8,6 +8,7 @@
 
 void whiteBoxTest(void);
 
+// split them into functions
 static void testNewNode(void);
 static void testInsertFront(void);
 static void testDeleteFirstItem(void);
@@ -28,6 +29,7 @@ int main(int argc, const char * argv[]) {
 void testNewNode(void) {
     printf("Testing newNode\n"); 
     link new = newNode(5);
+    // use asserts rather than printList
     assert(new != NULL);
     assert(getItem(new) == 5);
     assert(getItemIndex(new,0) == 5);
