@@ -1,3 +1,5 @@
+// apologies for inconsistent tab/space
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <assert.h>
@@ -37,7 +39,7 @@ Link createList(int size) {
 }
 
 void drop(Link list) {
-  // TODO
+    // TODO;
 }
 
 void printList(Link list) {
@@ -63,24 +65,28 @@ int mult(int x, int y) {
 }
 
 void map(Link list, int(*f)(int)) {
-  if(!empty(list)) {
-    list->value = f(head(list));
-    map(tail(list), f);
-  }
+    if(!empty(list)) {
+        list->value = f(head(list));
+        map(tail(list), f);
+     }
 }
 
 Link copy(Link list) {
-  // TODO
-  return NULL;
+    // TODO
+    return NULL;
+}
+
+int one(int x) {
+    return 1;
 }
 
 int sum(int x, int y) {
-  return x + y;
+    return x + y;
 }
 
 int length(Link list) {
-  // TODO
-  return 0;
+    // TODO
+    return 0;
 }
 
 int square(int x) {
@@ -88,8 +94,8 @@ int square(int x) {
 }
 
 int sumList(Link list) {
-  // TODO
-  return 0;
+    // TODO
+    return 0;
 }
 
 int main() {
